@@ -30,7 +30,7 @@ export default function Login() {
     }
 
     return (
-        <div className="flex-grow flex w-full flex-col lg:flex-row">
+        <div className="min-h-screen flex w-full flex-col lg:flex-row">
             {/* Direita - Imagem Fotográfica (Natureza Abstrata/Foco) */}
             <div className="hidden lg:flex flex-1 relative bg-slate-900 overflow-hidden items-center justify-center p-12 order-2">
                 <img 
