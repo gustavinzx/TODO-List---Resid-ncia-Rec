@@ -230,8 +230,7 @@ export default function AdminPanel() {
                 </div>
             </div>
 
-            {showModal && (
-                <Modal onClose={() => setShowModal(false)}>
+            <Modal open={showModal} onClose={() => setShowModal(false)}>
                     <h3 className="text-lg font-bold text-white mb-4">{editando ? 'Editar Usuário' : 'Novo Usuário'}</h3>
                     <div className="space-y-3">
                         <input placeholder="Nome" value={form.nome} onChange={e => setForm({ ...form, nome: e.target.value })} className="w-full p-2 rounded bg-slate-800 border border-slate-700 text-white outline-none focus:border-blue-500" />
@@ -249,7 +248,6 @@ export default function AdminPanel() {
                         <button onClick={salvarUsuario} className="w-full py-2 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-500 transition-colors mt-2">Salvar</button>
                     </div>
                 </Modal>
-            )}
         </NatureBackground>
     );
 }
