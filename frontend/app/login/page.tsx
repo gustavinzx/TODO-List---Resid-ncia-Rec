@@ -31,12 +31,13 @@ export default function Login() {
 
     return (
         <div className="flex-grow flex w-full flex-col lg:flex-row">
-            {/* Esquerda - Imagem Fotográfica (Natureza Abstrata/Foco) */}
-            <div className="hidden lg:flex flex-1 relative bg-slate-900 overflow-hidden items-center justify-center p-12">
+            {/* Direita - Imagem Fotográfica (Natureza Abstrata/Foco) */}
+            <div className="hidden lg:flex flex-1 relative bg-slate-900 overflow-hidden items-center justify-center p-12 order-2">
                 <img 
                     src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=2574&auto=format&fit=crop" 
                     alt="Natureza Abstrata"
                     className="absolute inset-0 w-full h-full object-cover opacity-70"
+                    style={{ transform: 'scaleX(-1)' }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent" />
                 
@@ -54,8 +55,8 @@ export default function Login() {
                 </div>
             </div>
 
-            {/* Direita - Formulário Glass/Clean */}
-            <div className="flex-1 flex flex-col items-center justify-center px-4 bg-slate-50 dark:bg-slate-900 relative">
+            {/* Esquerda - Formulário Glass/Clean */}
+            <div className="flex-1 flex flex-col items-center justify-center px-4 bg-slate-50 dark:bg-slate-900 relative order-1">
                 
                 <Link href="/" className="absolute top-8 left-8 text-slate-500 hover:text-slate-800 dark:hover:text-white flex items-center gap-2 transition-colors">
                     <ArrowLeft className="w-4 h-4" /> Voltar
