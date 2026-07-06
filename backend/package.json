@@ -1,7 +1,7 @@
 {
-  "name": "valorant-tourney-backend",
+  "name": "todo-list-rec-backend",
   "version": "1.0.0",
-  "description": "API backend da plataforma de torneios de Valorant",
+  "description": "API backend da plataforma de torneios de TODO-List",
   "main": "src/server.js",
   "type": "module",
   "scripts": {

@@ -25,7 +25,7 @@ export default function RootLayout({
             <body className="antialiased min-h-screen flex flex-col">
                 <AuthProvider>
                     <Navbar />
-                    <main className="flex-grow pt-24 pb-12">
+                    <main className="flex-grow flex flex-col">
                         {children}
                     </main>
                     <Toaster position="bottom-right" theme="system" />

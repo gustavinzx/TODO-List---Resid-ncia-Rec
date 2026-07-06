@@ -30,9 +30,9 @@ export default function Login() {
     }
 
     return (
-        <div className="min-h-screen flex w-full">
+        <div className="flex-grow flex w-full flex-col lg:flex-row">
             {/* Esquerda - Imagem Fotográfica (Natureza Abstrata/Foco) */}
-            <div className="hidden lg:flex flex-1 relative bg-slate-900 overflow-hidden items-end p-12">
+            <div className="hidden lg:flex flex-1 relative bg-slate-900 overflow-hidden items-center justify-center p-12">
                 <img 
                     src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=2574&auto=format&fit=crop" 
                     alt="Natureza Abstrata"
